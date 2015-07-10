@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>裁剪头像</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/webuploader.css">
+        <script src="js/image-crop.js"></script>
+    </head>  
+    <body>
+        <div>
+            <div class="source-wrap">
+                <h1>原图</h1>
+                <input type="file" id="J-upload">
+                <div class="rel origin ma" id="source"></div>
+               
+            </div>
+
+            <div class="after-wrap">
+                <h2 style="clear:both;">小图 122X160</h2>
+                <!-- 大小在样式里调，移动框比例在js里调 -->
+                <div class="prev rel" id="J-final-img">
+                    <img class="img abs" id="prevImg">
+                    <div class="nav-logo">
+                        <img src="img/navlogo.gif" alt="soufang">
+                    </div>
+                </div>
+                <button id="J-download" class="download-button">点此下载</button>
+            </div>
+
+            <div class="active-wrap" style="display:none;">
+                <h3 style="clear:both;">捕捉的图</h3>
+                <div class="area rel fl ml10">
+                    <img class="img abs" id="areaImg">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/webuploader.js"></script>
+    <script src="js/index.js"></script>
+</html>
